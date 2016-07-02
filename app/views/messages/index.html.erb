@@ -15,12 +15,14 @@
 
 <%= form_for(@message) do |f| %>
 
-  名前:
+   名前
+  <br>
   <%= f.text_field :name %>
-
-  内容:
-  
-  <%= f.text_field :body %>
+  <br>
+　内容
+　<br>
+  <%= f.text_area :body ,cols:40,rows:10  %>
+  <br>
   <%= f.submit class:"btn btn-sm btn-primary"%>
 
 <% end %>
